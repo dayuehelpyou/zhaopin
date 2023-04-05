@@ -1,0 +1,64 @@
+# baseURL = "http://0.0.0.0"
+languageCode = "en-us"
+defaultContentLanguage = "zh-cn"
+defaultContentLanguageInSubdir = true
+theme = ["MoonLake"]
+title = "大悦帮帮忙"
+hasCJKLanguage = true
+
+[frontmatter]
+  lastmod = [":git", ":fileModTime", "lastmod"]
+
+[Menus]
+  main = [
+      {Name = "文章", URL = "/posts", weight = 1},
+      # {Name = "Python", URL = "/categories/python/", weight = 2},
+      # {Name = "自闭", URL = "/zibi/", weight = 3},
+      # {Name = "日历", URL = "/calendar/", weight = 4},
+      {Name = "关于", URL = "/about/", weight = 10},
+  ]
+
+
+
+[markup.goldmark.renderer]
+unsafe = true
+[markup.highlight]
+style = "doom-one"
+
+[params]
+author = "大悦"
+info = "大悦来帮你"
+description = "by DaYue"
+pagetitle = "大悦"
+avatarurl = "dayue.png"
+hideColorSchemeToggle=true
+copyright = "大悦"
+since = 2022
+paginate = 20
+
+# favicon_16 = "static/favicon.ico"
+
+dateformShort   = "1月2日"
+dateFormat = "2006-01-02 15:04"
+dateNum = "2006-01-02"
+
+# customCSS = ["css/extra.css"]
+# customJS = ["js/lazysizes.min.js"]
+
+[[params.social]]
+name = "WeChat"
+icon = "fa fa-wechat fa-2x"
+weight = 1
+url = "#"
+
+[[params.social]]
+name = "GitHub"
+icon = "fa fa-github fa-2x"
+weight = 2
+url = "#"
+
+[[params.social]]
+name = "Email"
+icon = "fa fa-envelope fa-2x"
+weight = 3
+url = "#"
